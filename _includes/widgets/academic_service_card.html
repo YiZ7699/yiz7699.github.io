@@ -1,0 +1,28 @@
+<div id="service" class="page-section my-3 p-0 bg-white shadow-sm rounded-xl service-card">
+    <h6 class="panel-title border-bottom border-gray p-3 mb-0">
+        <i class="fas fa-user-check"></i> Academic Service
+    </h6>
+    <div class="service-content p-4">
+        {% if site.data.profile.academic_service.program_committee %}
+        <section class="service-group">
+            <h3>Program Committee</h3>
+            <ul>
+                {% for item in site.data.profile.academic_service.program_committee %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        {% if site.data.profile.academic_service.reviewer %}
+        <section class="service-group">
+            <h3>Reviewer for Conferences and Journals</h3>
+            <ul>
+                {% for item in site.data.profile.academic_service.reviewer %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+    </div>
+</div>

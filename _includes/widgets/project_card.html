@@ -1,0 +1,32 @@
+<div id="projects" class="page-section my-3 p-0 bg-white shadow-sm rounded-xl projects-card">
+    <h6 class="panel-title border-bottom border-gray p-3 mb-0">
+        <i class="fas fa-diagram-project"></i> Projects &amp; Activities
+    </h6>
+    <div class="project-list">
+        {% for item in site.data.profile.projects %}
+        <article class="project-item p-4{% unless forloop.last %} border-bottom border-gray{% endunless %}">
+            <div class="project-heading">
+                <span>{{ item.name }}</span>
+                {% if item.badge %}
+                <span class="badge badge-pill badge-success">{{ item.badge }}</span>
+                {% endif %}
+            </div>
+            <div class="project-description">
+                {{ item.description }}
+            </div>
+            {% if item.image %}
+            <div class="project-media">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.name }}" loading="lazy">
+            </div>
+            {% endif %}
+            {% if item.links %}
+            <div class="project-links">
+                {% for link in item.links %}
+                <a href="{{ link[1] }}" target="_blank" rel="noopener noreferrer">[{{ link[0] }}]</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </article>
+        {% endfor %}
+    </div>
+</div>

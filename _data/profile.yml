@@ -1,0 +1,126 @@
+primary_name: "Yi Zheng"
+secondary_name: ""
+navbar_name: "Yi Zheng"
+
+positions:
+- name: PhD Student in Computer Science 
+- name: University of Southern California
+  logo:  # Logo is optional
+
+
+email_user: "yzheng63"
+email_domain: "usc(dot)edu"
+# cv_link: link-to-your-cv-file
+gscholar: PPYzV5YAAAAJ  # This is an example, replace it with your own Google Scholar ID
+github: YiZ7699
+linkedin: yi-z-8b8863149
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a Ph.D. student in Computer Science at the
+    University of Southern California. My research focuses on
+    designing scalable algorithms for complex planning, optimization, and
+    resource-allocation problems.
+  </p>
+
+  <p>
+    My current work develops efficient and scalable algorithms for <strong>Multi-Agent Path Finding</strong> and <strong>Virtual Network Embedding</strong>. 
+    These problems involve coordinating multiple agents, allocating limited resources, and finding feasible paths under complex constraints. 
+    My recent research applies AI, search, and optimization techniques to large-scale planning, coordination, and resource allocation problems.
+    I am also interested in translating algorithmic research into practical systems for robotics, autonomous agents, and large-scale network optimization.
+  </p>
+
+  <p>
+    <strong>Research interests:</strong><br>
+    Artificial Intelligence · Search &amp; Planning · Multi-Agent Systems · Motion Planning ·
+    Combinatorial Optimization · Resource Allocation 
+  </p>
+
+portrait_url: /assets/images/photos/portrait.jpg
+# portrait_caption: >-
+#   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+
+education:
+- name: <strong>University of Southern California</strong>
+  logo: 
+  position: Ph.D. in Computer Science
+  advisor: "Advisors: <a href=\"https://idm-lab.org/\">Prof. Sven Koenig</a> and <a href=\"https://www.tkskwork.org/\">Prof. T. K. Satish Kumar</a>"
+  date: 2019 - Present
+- name: <strong>University of Southampton</strong>
+  logo:
+  position: B.S. in Computer Science - 1st class honored
+  date: 2015 - 2019
+
+experience:
+- name: <strong>University of California, Irvine</strong>
+  logo: 
+  position: <strong>Junior Specialist (Summer Internship Position)</strong>
+  date: Jun 2025 – Aug 2025
+  description: >-
+    <ul>
+      <li>Designed and developed Multi-Agent Path Finding algorithms for <strong>3D warehouse robots</strong>.</li>
+      <li>Implemented algorithms in <strong>C++</strong> and built <strong>simulations with ROS and Gazebo</strong> independently.</li>
+    </ul>
+
+- name: <strong>University of Southern California</strong>
+  logo: 
+  roles:
+  - position: <strong>Research Assistant</strong>
+    date: Aug 2019 – Present
+    description: >-
+      <ul>
+        <li>Conduct research on scalable algorithms for <strong>Multi-Agent Path Finding</strong> and <strong>Virtual Network Embedding</strong>, developing new heuristic-search and optimization techniques for large-scale combinatorial problems.</li>
+        <li>Designed and developed Virtual Network Embedding algorithms that significantly outperform the existing work in <strong>scalability and runtime</strong> while maintaining <strong>near-optimal solution costs</strong>.</li>
+        <li>Collaborated with the USC Information Sciences Institute (ISI) research team, and my Virtual Network Embedding algorithms were applied to <strong>network slicing</strong> in the SABRES project, connecting fundamental algorithmic research with practical networking systems.</li>
+        <li>Collaborated with Prof. Ken Nakagaki on <strong>Human-Computer Interaction and robotics research</strong>, developing motion-planning algorithms for the robots.</li>
+      </ul>
+  - position: <strong>Teaching Assistant</strong>
+    date:
+    description: >-
+      <ul class="teaching-list">
+        <li><div class="teaching-item"><span>DSCI 553 Foundations and Applications of Data Mining</span><span class="teaching-date">Jan 2026 – May 2026</span></div></li>
+        <li><div class="teaching-item"><span>CSCI 567 Machine Learning</span><span class="teaching-date">Aug 2025 – Dec 2025</span></div></li>
+        <li><div class="teaching-item"><span>CSCI 561 Foundations of Artificial Intelligence</span><span class="teaching-date">Jan 2025 – May 2025</span></div></li>
+        <li><div class="teaching-item"><span>CSCI 561 Foundations of Artificial Intelligence</span><span class="teaching-date">Aug 2024 – Dec 2024</span></div></li>
+        <li><div class="teaching-item"><span>CSCI 360 Introduction to Artificial Intelligence</span><span class="teaching-date">Aug 2021 – Dec 2021</span></div></li>
+      </ul>
+
+projects:
+- name: NeurIPS 2020 Flatland Challenge
+  badge: 1st Place
+  image: /assets/images/projects/flatland.gif
+  description: >-
+    <ul>
+      <li>Won <strong>1st place in both rounds</strong> of the NeurIPS 2020 Flatland Challenge, a large-scale railway planning and scheduling competition held in partnership with major European railway companies.</li>
+      <li>Outperformed all other submissions in both tracks, including reinforcement-learning entries, in a field of more than 700 participants from 51 countries and over 2,000 submissions.</li>
+      <li><a href="https://viterbischool.usc.edu/news/2021/03/making-the-virtual-trains-run-on-time-usc-team-world-champs-in-ai-challenge/" target="_blank">The USC press release</a></li>
+    </ul>
+- name: AI Education
+  description: >-
+    <ul>
+      <li>Contributed to an NSF-supported project developing an advanced manufacturing curriculum by creating slides, videos, exercises, and interactive Python notebooks for AI in manufacturing (with Prof. Sven Koenig).</li>
+      <li>Contributed to the writing and editing of the chapter <em>Artificial Intelligence and Automation</em> in the <em>Springer Handbook of Automation, 2nd ed.</em> <a href="https://link.springer.com/book/10.1007/978-3-030-96729-1" target="_blank">[book]</a></li> 
+    </ul>
+
+academic_service:
+  program_committee:
+  - 17th Workshop on Optimization and Learning in Multiagent Systems (<strong>OptLearnMAS</strong>), 2026
+  - <strong>AAAI</strong> Conference, 2026
+  - The 37th IEEE International Conference on Tools with Artificial Intelligence (<strong>ICTAI</strong>), 2025
+  - <strong>AAAI</strong> Workshop on Multi-Agent Path Finding, 2023
+  reviewer:
+  - Artificial Intelligence Journal (<strong>AIJ</strong>), 2026
+  - Transactions on Machine Learning Research (<strong>TMLR</strong>), 2026
+  - IEEE Robotics and Automation Letters (<strong>RA-L</strong>), 2026
+  - The 25th International Conference on Autonomous Agents and Multiagent Systems (<strong>AAMAS</strong>), 2026
+  - Journal of Artificial Intelligence Research (<strong>JAIR</strong>), Special Track on Multi-Agent Path Finding
+  - The 35th International Conference on Automated Planning and Scheduling (<strong>ICAPS</strong>), 2025
+  - IEEE International Conference on Robotics and Automation (<strong>ICRA</strong>), 2025
+  - Advanced Engineering Informatics
+  - IEEE International Conference on Robotics and Automation (<strong>ICRA</strong>), 2024
+  - IEEE Robotics and Automation Letters (<strong>RA-L</strong>), 2024
+  - IEEE/RSJ International Conference on Intelligent Robots and Systems (<strong>IROS</strong>), 2024
+  - The 13th International Symposium on Combinatorial Search (<strong>SoCS</strong>), 2020
+  - The 16th AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (<strong>AIIDE</strong>), 2020

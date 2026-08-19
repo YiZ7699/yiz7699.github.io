@@ -1,0 +1,54 @@
+---
+layout: default
+title : Homepage
+navbar_title: Home
+hide_navbar: true
+hide_footer: true
+---
+
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
+
+        <section id="about" class="page-section">
+            {% include widgets/profile_card_bio_only.html %}
+        </section>
+
+        <!-- Debugging widgets -->
+        {% include widgets/debug_repo_name.html %}
+        {% include widgets/debug_url.html %}
+
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html %}
+        {% endif %}
+
+        {% if site.data.profile.projects %}
+            {% include widgets/project_card.html %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
+
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse %}
+        <section id="publications" class="page-section">
+            {%
+            include widgets/publication_card.html
+            publications=pubs
+            title='<i class="fas fa-book-open"></i> Publications'
+            hide_view_all=true
+            %}
+        </section>
+        {% endif %}
+
+        {% if site.data.profile.academic_service %}
+            {% include widgets/academic_service_card.html %}
+        {% endif %}
+    </div>
+</div>
