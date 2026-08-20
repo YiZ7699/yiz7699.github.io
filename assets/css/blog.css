@@ -264,3 +264,37 @@ h1, h2, h3, h4, h5, h6,
 .blog-toc-nav {
     scrollbar-width: none;
 }
+
+[data-theme="dark"] .blog-content h1,
+[data-theme="dark"] .blog-content h2,
+[data-theme="dark"] .blog-toc-nav {
+    border-color: var(--border);
+}
+
+[data-theme="dark"] .blog-content blockquote,
+[data-theme="dark"] .blog-toc-title,
+[data-theme="dark"] .blog-toc-list a {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .blog-toc-list a:hover,
+[data-theme="dark"] .blog-toc-list a.toc-active {
+    color: var(--text);
+}
+
+[data-theme="dark"] .blog-content table th {
+    color: var(--text);
+    background-color: var(--surface-muted);
+}
+
+[data-theme="dark"] .blog-content table th,
+[data-theme="dark"] .blog-content table td {
+    border-color: var(--border);
+}
+
+[data-theme="dark"] code,
+[data-theme="dark"] pre,
+[data-theme="dark"] .highlighter-rouge {
+    color: #e6edf3;
+    background-color: #111820;
+}

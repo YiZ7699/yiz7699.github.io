@@ -1,5 +1,30 @@
 // aHR0cHM6Ly9naXRodWIuY29tL2x1b3N0MjYvYWNhZGVtaWMtaG9tZXBhZ2U=
 $(function () {
+    const themeToggle = document.querySelector('.theme-toggle');
+
+    function updateThemeToggle(theme) {
+        if (!themeToggle) return;
+        const isDark = theme === 'dark';
+        const label = isDark ? 'Switch to light mode' : 'Switch to night mode';
+        themeToggle.setAttribute('aria-label', label);
+        themeToggle.setAttribute('title', label);
+        themeToggle.querySelector('.theme-toggle-label').textContent = label;
+        themeToggle.querySelector('i').className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+        const visibleLabel = themeToggle.querySelector('.theme-toggle-text');
+        if (visibleLabel) visibleLabel.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+    }
+
+    updateThemeToggle(document.documentElement.getAttribute('data-theme'));
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+            const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', nextTheme);
+            localStorage.setItem('theme', nextTheme);
+            updateThemeToggle(nextTheme);
+        });
+    }
+
     lazyLoadOptions = {
         scrollDirection: 'vertical',
         effect: 'fadeIn',
