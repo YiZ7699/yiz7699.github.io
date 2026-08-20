@@ -313,6 +313,20 @@ div.lazy {
     line-height: 1.45;
 }
 
+.publication-mobile-surface {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="dark"] .publication-authors .text-body,
+[data-theme="dark"] .publication-venue,
+[data-theme="dark"] .publication-venue strong {
+    color: var(--text) !important;
+}
+
+[data-theme="dark"] .publication-mobile-surface {
+    background-color: rgba(23, 30, 39, 0.94);
+}
+
 .email-text {
     font-family: Source Code Pro, monospace;
 }
